@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOMContentLoaded</title>
+    <script>
+      //DOMContentLoaded 이벤트를 연결합니다.
+      document.addEventListener("DOMContentLoaded", () => {
+        const h1 = (text) => `<h1>${text}</h1>`;
+        document.body.innerHTML += h1(`DOMContentLoaded 이벤트 발생`);
+      });
+      // 문서 객체를 모두 읽어들이면(DOMContentLoaded)이 콜백 함수가 실행!
+    </script>
+  </head>
+  <body></body>
+</html>
